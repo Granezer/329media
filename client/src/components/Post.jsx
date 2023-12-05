@@ -4,7 +4,8 @@ import sample from "../assets/images/sample.jpg";
 import { FaLongArrowAltRight, FaCaretDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Post = () => {
+const Post = (props) => {
+  const {posts, title, img} = props
     return (
       <Wrapper>
         <div className="post-container">
@@ -15,19 +16,10 @@ const Post = () => {
             <div className="date">
               Posted <span>17th Nov 2023</span>
             </div>
-            <h1>Sample title</h1>
+            <h1>{title}</h1>
             <div className="content">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-                doloremque adipisci esse non dignissimos maiores doloribus amet
-                quasi reiciendis neque aut inventore ullam ad, debitis, beatae
-                deserunt quia? Dolor molestiae ut temporibus magnam modi
-                deleniti voluptatum praesentium officiis. Dicta reiciendis est
-                maiores accusamus voluptatum sequi obcaecati illo natus id
-                velit.e aut inventore ullam ad, debitis, beatae deserunt quia?
-                Dolor molestiae ut temporibus magnam modi deleniti voluptatum
-                praesentium officiis. Dicta reiciendis est maiores accusamus
-                voluptatum sequi obcaecati illo natus id velit
+               {posts}
                 <Link className="see-more">
                   ...see more
                   <FaCaretDown />
