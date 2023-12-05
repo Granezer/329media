@@ -15,14 +15,16 @@ const Landing = () => {
           <div className="info">
             <img src={illustration} alt="" className="img mobile-img" />
             <h1>
-              <span>welcome</span> to my Blog
+              <span>welcome</span> to 329 media
             </h1>
             <p className="text">
-              This blog website has personalized features that gives you control
+              {/* This blog website has personalized features that gives you control
               over the entire layout of your blogging website. This includes
               features to edit colors used on the site, edit logos, edit the
-              display of your posts and you can also edit the texts too. All
-              from your dashboard.
+              display of your posts and you can also edit the texts too. All */}
+              329Media is a media agency with the objective of projecting, promoting
+              and building media publicity for new and existing brands, startups
+              companies etc from the ground up...
             </p>
             <Link to="/login" className="btn">
               {" "}
