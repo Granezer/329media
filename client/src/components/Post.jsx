@@ -10,7 +10,7 @@ const Post = (props) => {
       <Wrapper>
         <div className="post-container">
           <div className="image-wrapper">
-            <img src={sample} alt="" />
+            <img src={img} alt="" />
           </div>
           <div className="blog-content">
             <div className="date">
